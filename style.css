@@ -19,7 +19,7 @@
 }
 
 @media (max-width: 750px) {
-  body {
+  .wrapper {
     margin: 50px;
     margin-top: 5px;
   }
@@ -210,11 +210,11 @@ h4 {
   font-size: var(--font-size-big);
 }
 
-/* @media screen {
-  .about {
+@media screen {
+  .about p{
     width: 100%;
   }
-} */
+}
 
 .info {
   display: grid;
