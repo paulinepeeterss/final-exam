@@ -30,13 +30,14 @@ header {
 
   padding-left: 20px;
   padding-bottom: 15vh;
-
-  background-color: white;
 }
 
 nav {
   display: flex;
   justify-content: flex-end;
+/* 
+  position: fixed;
+  width: 100%; */
 } 
 
 @media (max-width: 750px) {
@@ -131,6 +132,12 @@ img {
   font-size: var(--font-size-big);
 }
 
+@media (max-width: 750px) { 
+  .concept {  
+  width: 100%;
+  }
+}
+
 /* image grid */
 .project-gallery {
   display: grid; 
@@ -176,8 +183,16 @@ img {
   margin: 0;
   
   color: rgb(181, 181, 181);
-  font-size: 9px;
+  font-size: 12px;
 }
+
+
+@media (max-width: 750px) { 
+  .img-caption {  
+    font-size: 9px;
+  }
+}
+
 
 .extra-links {
   padding-top: 15vh;
@@ -205,14 +220,18 @@ h4 {
 }
 
 .about {
+  display: flex;
+  flex-flow: column;
+  flex-grow: 1;
+
   width: 65%;
 
   font-size: var(--font-size-big);
 }
 
-@media screen {
-  .about p{
-    width: 100%;
+@media (max-width: 800px) { 
+  .about {  
+  width: 100%;
   }
 }
 
@@ -245,6 +264,14 @@ h4 {
 footer {
   padding-top: 100px;
 
-  font-size: 9px;
-  text-align: center;
+  font-size: 12px;
+  text-align: right;
+  line-height: 7px;
+}
+
+
+@media (max-width: 750px) { 
+  .footer {  
+    font-size: 9px;
+  }
 }
