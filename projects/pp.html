@@ -9,10 +9,11 @@
 </head>
 
 <div class="wrapper">
+
 <body>
   <header> 
     <nav>
-      <a href="/index.html"> <svg id="Laag_1" data-name="Laag 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 586 586"><defs><style>.cls-1{fill:none;}.cls-2{clip-path:url(#clip-path);}</style><clipPath id="clip-path"><rect class="cls-1" x="93.89" y="184" width="100" height="100"/></clipPath></defs><polygon points="93.89 184.46 93.89 402.61 131.48 402.61 131.48 188.42 131.48 184.46 93.89 184.46"/><polygon points="299.91 184 299.91 402.16 337.51 402.16 337.51 187.97 337.51 184 299.91 184"/><g class="cls-2"><path d="M215.41,326a70.84,70.84,0,1,0-70.84-70.84A70.84,70.84,0,0,0,215.41,326"/><path d="M421.44,325.68a70.84,70.84,0,1,0-70.84-70.84,70.84,70.84,0,0,0,70.84,70.84"/></g></svg></a>
+      <a href="index.html"> <img class="logo-header" src="/Images/PP/logo.png" alt="pauline peeters"></a>
       <h2><a href="/about.html">about</a></h2>
       <h2><a href="/index.html">projects</a></h2>
       <h2><a href="/contact.html">contact</a></h2>
@@ -78,5 +79,22 @@
     <p> Pauline Peeters </p>
     <p> Click here fot the pdf of the Porfolio & Cv </p>
   </footer>
-</body>
+  </body>
+
+  <script>
+    document.body.onmousemove=moveCursor;
+
+    var curTxt=document.createElement('div');
+        curTxt.id="cursorprojects";
+        curTxt.innerHTML="next project";
+        document.body.appendChild(curTxt);
+
+    var curTxtLen=[curTxt.offsetWidth,curTxt.offsetHeight];
+
+    function moveCursor(e){
+      if(!e){e=window.event;}
+      curTxt.style.left=e.clientX-curTxtLen[0]+'px';
+      curTxt.style.top=e.clientY-curTxtLen[0]+'px';
+  }
+  </script>
 </div>

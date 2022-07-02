@@ -12,7 +12,7 @@
 <body>
   <header> 
     <nav>
-      <a href="index.html">PP</a> <!-- logo -->
+      <a href="index.html"> <img class="logo-header" src="Images/PP/logo.png" alt="pauline peeters"></a>
       <h2><a href="about.html">about</a></h2>
       <h2><a href="index.html">projects</a></h2>
       <h2><a href="contact.html">contact</a></h2>
@@ -28,6 +28,23 @@
       <h2> contact </h2>
       <a href = "mailto: pauline.peeters1012@hotmail.com">pauline.peeters1012@hotmail.com</a>
     </div>
+
+    <script>
+      document.body.onmousemove=moveCursor;
+  
+      var curTxt=document.createElement('div');
+          curTxt.id="cursorabout";
+          curTxt.innerHTML="resume below";
+          document.body.appendChild(curTxt);
+  
+      var curTxtLen=[curTxt.offsetWidth,curTxt.offsetHeight];
+  
+      function moveCursor(e){
+        if(!e){e=window.event;}
+        curTxt.style.left=e.clientX-curTxtLen[0]+'px';
+        curTxt.style.top=e.clientY-curTxtLen[0]+'px';
+    }
+    </script>
   </main>
   
   <div class="info resume">
@@ -130,6 +147,23 @@
       </div>
     </div>
 </div>
+
+<script>
+    let value = 0;
+
+  function draw() {
+    fill(value);
+    rect(25, 25, 50, 50);
+  }
+
+  function mouseMoved() {
+    value = value + 5;
+    if (value > 255) {
+      value = 0;
+    }
+  }
+
+</script>
 
   <footer>
     <p> Pauline Peeters </p>
