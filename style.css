@@ -26,30 +26,6 @@
   }
 }
 
-#cursorabout{
-  position: absolute;
-
-  font-size: 12px;
-  text-transform: uppercase;
-  font-weight: bold;
-  color: blueviolet;
-
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-
-}
-
-#cursorprojects{
-  position: absolute;
-  font-size: 12px;
-
-  text-transform: uppercase;
-  font-weight: bold;
-  color: blueviolet;
-
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-
-}
-
 header {
   display: block;
   
@@ -362,14 +338,19 @@ h4 {
 
 footer {
   display: flex;
-  /* justify-content: flex-end; */
-
-  /* padding-top: 100px; */
-  padding: 8px 16px;
-
+  padding-top: 50px;
 
   font-size: 50px;
-  /* line-height: 50px; */
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+
+}
+
+ul li{
+  display: inline-table;
 }
 
 .previous {

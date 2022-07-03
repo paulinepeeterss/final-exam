@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pauline navigation</title>
+  <link rel="stylesheet" href="menu.css">
+</head>
+
+<body>
+  <header id="header" class="closed">
+    <nav>
+      <a href="#">Projects</a>
+      <a href="#">Contact</a>
+      <a href="#">Home</a>
+    </nav>
+    <div class="header-bar">
+      <p>Peeters Pauline</p>
+      <button id="menuBtn">Open/Close</button>
+    </div>
+  </header>
+
+  <script>
+    // Save the two elements we need in two variables
+    // by selecting them using their ID attributes
+    var menuBtn = document.getElementById("menuBtn");
+    var header = document.getElementById("header");
+    // Add event listener attaches the funtion to an event
+    // in our case the click
+    menuBtn.addEventListener("click", openCloseMenu);
+    // This function gets executed every time you click the menu button
+    function openCloseMenu() {
+      header.classList.toggle("closed");
+    }
+  </script>
+</body>

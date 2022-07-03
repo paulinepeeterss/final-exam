@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pauline Peeters</title>
   <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
 </head>
 
 <div class="wrapper">
@@ -21,34 +22,45 @@
 
   <main>
     <div class="project-overview"> 
-      <img src="Images/MM/COVER.jpg" alt="online magazien - mind matter" class="project-overview-img">
+      <img src="Images/MM/COVER.jpg" alt="online magazien - mind matter" class="project-overview-img four">
         <a href="projects/mm.html" class="overlay p4">
           <div class="project-gallery-text"> <div class="hover-title"> Mind Matter </br> 2022 </div> <div class="hover-text"> Printed and online magazine to
             help parents and their children, who struggle with mental health issues. </div></div>
           </a>
 
-        <img src="Images/PP/poster.jpg" alt="personal identity" class="project-overview-img">
+        <img src="Images/PP/poster.jpg" alt="personal identity" class="project-overview-img three">
         <a href="projects/pp.html" class="overlay p3">
           <div class="project-gallery-text"> <div class="hover-title"> Personal Identity </br> 2022 </div> <div class="hover-text"> Visual way of expressing my
             personal work. </div></div>
           </a>
 
-        <img src="Images/GAM/COVER.jpg" alt="galleria d'arte moderna new identity" class="project-overview-img">
+        <img src="Images/GAM/COVER.jpg" alt="galleria d'arte moderna new identity" class="project-overview-img two">
         <a href="projects/gam.html" class="overlay p2">
           <div class="project-gallery-text"> <div class="hover-title"> Galleria d'Arte Moderna </br> 2022 </div> <div class="hover-text"> New identity request for the modern
             art museum in Milano. </div></div>
           </a>
 
-        <img src="Images/M/COVER.jpg" alt="redesign of the e-commerce for massimo alba" class="project-overview-img">
+        <img src="Images/M/COVER.jpg" alt="redesign of the e-commerce for massimo alba" class="project-overview-img one">
         <a href="projects/m.html" class="overlay p1">
           <div class="project-gallery-text"> <div class="hover-title"> Massimo Alba </br> 2022 </div> <div class="hover-text"> A redesign proposal for the e-commerce of massimoalba.com. </div> </div>
         </a>
     </div>
   </main>
 
+  <footer>
+    <ul>
+      <li> <a href="https://www.linkedin.com/in/pauline-peeters-bb622120a/" target="_blank"> <img src="icons/LinkdIn.png" alt="LindIn" height="30px"></a></li>
+      <li> <a href="https://www.behance.net/ppportfolio" target="_blank"> <img  src="icons/Behance.png" alt="Behance" height="30px"> </a></li>
+      <li> <a href="https://www.pinterest.com/paulinepeeterss/_saved/" target="_blank"> <img src="icons/Pinterest.png" alt="Pinterest" height="30px"></a></li>
+    </ul>
+  </footer>
+
   <script>
     var gridTimeline = new gsap.timeline();
-    gridTimeline.from(".project-overview-img",{duration: .7,delay: .1,x: 1000, opacity: 0, ease: "ease.in"});
+    gridTimeline.from(".one",{duration: .1,delay: .01, scale: 0, opacity: 0, ease: "ease.out"}),0;
+    gridTimeline.from(".two",{duration: .3,delay: .01, scale: 0, opacity: 0, ease: "ease.out"}),0.1;
+    gridTimeline.from(".three",{duration: .3,delay: .01, scale: 0, opacity: 0, ease: "ease.out"}),0.2;
+    gridTimeline.from(".four",{duration: .3,delay: .01, scale: 0, opacity: 0, ease: "ease.out"}),0.3;
   </script>
 
 </body>

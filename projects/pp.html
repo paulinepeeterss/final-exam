@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pauline Peeters</title>
   <link rel="stylesheet" href="/style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+
 </head>
 
 <div class="wrapper">
@@ -64,9 +66,7 @@
       </div>
       <div class="concept">
         <h2> PP . Personal Identity</h2>
-        <p> For my personal identity the inspiration mostly started with my name that has an
-          anagram. This repetion will be shown with geometric shapes. These shapes will be
-          used in a grid, where it is possible form the identity and used in a grid. The use of the initials will be used as titles of my works, for example MM.Editorial or GAM.Identity. </p>
+        <p> For my personal identity the inspiration mostly started with my name that has ananagram. This repetion will be shown with geometric shapes. These shapes will be used in a grid, where it is possible form the identity and used in a grid. The use of the initials will be used as titles of my works, for example MM.Editorial or GAM.Identity. </p>
       </div>  
     </div>
 
@@ -82,20 +82,8 @@
   </footer>
   </body>
 
-  <!-- <script>
-    document.body.onmousemove=moveCursor;
-
-    var curTxt=document.createElement('div');
-        curTxt.id="cursorprojects";
-        curTxt.innerHTML="next project";
-        document.body.appendChild(curTxt);
-
-    var curTxtLen=[curTxt.offsetWidth,curTxt.offsetHeight];
-
-    function moveCursor(e){
-      if(!e){e=window.event;}
-      curTxt.style.left=e.clientX-curTxtLen[0]+'px';
-      curTxt.style.top=e.clientY-curTxtLen[0]+'px';
-  }
-  </script> -->
+  <script>
+    var gridTimeline = new gsap.timeline();
+    gridTimeline.from(".project",{duration: 3, delay: .01, y: -7000, ease: "ease.in"});
+  </script>
 </div>

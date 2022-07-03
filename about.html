@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pauline Peeters</title>
   <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
 </head>
 
 <div class="wrapper">
@@ -132,5 +133,19 @@
     </div>
 </div>
 
+<footer>
+  <ul>
+    <li> <a href="https://www.linkedin.com/in/pauline-peeters-bb622120a/" target="_blank"> <img src="icons/LinkdIn.png" alt="LindIn" height="30px"></a></li>
+    <li> <a href="https://www.behance.net/ppportfolio" target="_blank"> <img  src="icons/Behance.png" alt="Behance" height="30px"> </a></li>
+    <li> <a href="https://www.pinterest.com/paulinepeeterss/_saved/" target="_blank"> <img  src="icons/Pinterest.png" alt="Pinterest" height="30px"></a></li>
+  </ul>
+</footer>
+
+<script>
+  var gridTimeline = new gsap.timeline();
+  gridTimeline.from(".about",{duration: 0.5, delay: .01, y: -50, opacity: 0, ease: "ease.in"});
+  gridTimeline.from(".extra-links",{duration: 0.5, delay: .01, y: -50, opacity: 0, ease: "ease.in"});
+  gridTimeline.from(".resume",{duration: 3, delay: .01, y: -200, opacity: 0, ease: "ease.in"});
+</script>
 </body>
 </div>

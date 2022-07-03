@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pauline Peeters</title>
   <link rel="stylesheet" href="/style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+
 </head>
 
 <div class="wrapper">
@@ -85,8 +87,12 @@
     </main>
 
     <footer>
-      <a href="m.html"> Previous project </a>
-      <a href="pp.html"> Next project </a> 
+      <a href="gam.html" class="previous"> &#8249; </a>
+      <a href="mm.html" class="next"> &#8250; </a> 
     </footer>
 </body>
+<script>
+  var gridTimeline = new gsap.timeline();
+  gridTimeline.from(".project",{duration: 3, delay: .01, y: -7000, ease: "ease.in"});
+</script>
 </div>
