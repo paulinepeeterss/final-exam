@@ -58,9 +58,9 @@ header {
 }
 
 .logo-header {
-  display: flex;
+  /* display: flex;
+  justify-content: flex-start; */
   padding-top: 20px;
-  justify-content: flex-start;
   
   height: 30px;
   width: auto;
@@ -364,14 +364,20 @@ footer {
   display: flex;
   /* justify-content: flex-end; */
 
-  padding-top: 100px;
+  /* padding-top: 100px; */
+  padding: 8px 16px;
 
-  font-size: 12px;
-  line-height: 7px;
+
+  font-size: 50px;
+  /* line-height: 50px; */
+}
+
+.previous {
+  color: black;
 }
 
 .next {
-  text-align: right;
+  color: black;
 }
 
 @media (max-width: 750px) { 
