@@ -223,7 +223,7 @@ img {
   grid-column-end: 7;
 }
 
-/* 2 /images next to eachother */
+/* 2 /Images next to eachother */
 .project-gallery-box-two-first {
   grid-column-start: 1;
   grid-column-end: 4;
@@ -234,7 +234,7 @@ img {
   grid-column-end: 7;
 }
 
-/* 3 /images next to eachother */
+/* 3 /Images next to eachother */
 .project-gallery-box-three-first {
   grid-column-start: 1;
   grid-column-end: 3;
