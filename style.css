@@ -360,9 +360,3 @@ ul li{
 .next {
   color: black;
 }
-
-@media (max-width: 750px) { 
-  .footer {  
-    font-size: 9px;
-  }
-}
