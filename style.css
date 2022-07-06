@@ -21,7 +21,7 @@
 
 @media (max-width: 750px) {
   .wrapper {
-    margin: 50px;
+    margin: 30px;
     margin-top: 5px;
   }
 }
@@ -346,7 +346,6 @@ footer {
 ul {
   list-style-type: none;
   padding: 0;
-
 }
 
 ul li{
