@@ -9,11 +9,11 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
 </head>
 
-<div class="wrapper">
 <body>
+  <div class="wrapper">
   <header> 
     <nav>
-      <a href="index.html"> <img class="logo-header" src="Images/PP/logo.png" alt="pauline peeters"></a>
+      <a href="index.html"> <img class="logo-header" src="images/PP/logo.png" alt="pauline peeters"></a>
       <h2><a href="about.html">about</a></h2>
       <h2><a href="index.html">projects</a></h2>
      </nav> 
@@ -22,7 +22,7 @@
   <main>
     <div class="about">
       <p> Hi, my name is Pauline Peeters and I am a Belgian Graphic designer who focuses on the web aspect (UI & UX).
-    </br> </br>
+      </p> <p>
       I studied Graphic design in Antwerp (BE), where I learned to create visual identity’s. During this bachelors, I went on exchange in Helsinki (FI) where I studied Visual Communication design. This is where my passion for digital design came in. Therefore after my bachelor, I decided to study the Master Web & digital Design at SPD in Milan (IT).</p>
     </div>
       <div class="extra-links">
@@ -33,7 +33,7 @@
   
   <div class="info resume">
     <div class="education">
-      <h3> education </h3>
+      <h2> education </h2>
       <div class="resume-info">
         <h4> master degree </h4>
         <h4> 2021 - 2022 </h4>
@@ -72,7 +72,7 @@
       </div>
     </div>
     <div class="skills">
-      <h3> technical info </h3>
+      <h2> technical info </h2>
       <div class="resume-info">
         <h4> programs </h4>
         <div class="resume-info-text">
@@ -96,13 +96,13 @@
       </div>
     </div>
     <div class="expierence">
-      <h3> expierence </h3>
+      <h2> expierence </h2>
       <div class="resume-info">
-        <h4> jobstudent </h4>
-        <h4> 2018 - 2021 </h4>
+        <h4> social media coordinator </h4>
+        <h4>  2021 </h4>
         <div class="resume-info-text">
-        <p> <b>Supermarket Albert heijn </b></p>
-        <p> Maintaining a clean work environment and organized food displays. </p>
+        <p> <b> Hockeyclub Taxandria </b></p>
+        <p> Responsible for the social media and interaction with people online. </p>
         </div>
       </div>
       <div class="resume-info">
@@ -113,13 +113,6 @@
         <p> Responsible for planning, leading, and performing a range of group sports exercises/activities. </p>
         </div>
       </div>
-      <div class="resume-info">
-        <h4> jobstudent </h4>
-        <h4>  2017 - 2019 </h4>
-        <div class="resume-info-text">
-        <p> <b> Bevers Event catering </b></p>
-        <p> Serving food to guests at festivals. </p>
-        </div>
       </div>
       <div class="resume-info">
         <h4> volunteer worker </h4>
@@ -144,7 +137,8 @@
   var gridTimeline = new gsap.timeline();
   gridTimeline.from(".about",{duration: 0.5, delay: .01, y: -50, opacity: 0, ease: "ease.in"});
   gridTimeline.from(".extra-links",{duration: 0.5, delay: .01, y: -50, opacity: 0, ease: "ease.in"});
-  gridTimeline.from(".resume",{duration: 3, delay: .01, y: -200, opacity: 0, ease: "ease.in"});
+  gridTimeline.from(".resume",{duration: 1.5, delay: .01, y: -200, opacity: 0, ease: "ease.in"});
 </script>
-</body>
+
 </div>
+</body>
