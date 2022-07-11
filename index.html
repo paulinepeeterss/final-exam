@@ -10,11 +10,12 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
 </head>
 
-<body>
-  <div class="wrapper">
+<div class="wrapper">
+
+  <body>
     <header>
       <nav>
-        <a href="index.html"> <img class="logo-header" src="images/PP/logo.png" alt="pauline peeters"></a>
+        <a href="index.html"> <img class="logo-header" src="Images/PP/logo.png" alt="pauline peeters"></a>
         <h2><a href="about.html">about</a></h2>
         <h2><a href="index.html">projects</a></h2>
       </nav>
@@ -23,83 +24,78 @@
     <main>
       <div class="project-overview">
 
-        <img src="images/PP/poster.jpg" alt="personal identity" class="project-overview-img four">
+        <img src="Images/PP/poster.jpg" alt="personal identity" class="project-overview-img four">
         <a href="projects/pp.html" class="overlay p5">
           <div class="project-gallery-text">
-            <div class="hover-title"> Personal Identity </div> 2022
+            <div class="hover-title"> Personal Identity </br> 2022 </div>
+            <div class="hover-text"> Visual way of expressing my
+              personal work. </div>
           </div>
-          <div class="hover-text"> Visual way of expressing my
-            personal work. </div>
+        </a>
+
+        <img src="Images/MM/COVER.jpg" alt="online magazien - mind matter" class="project-overview-img five">
+        <a href="projects/mm.html" class="overlay p4">
+          <div class="project-gallery-text">
+            <div class="hover-title"> Mind Matter </br> 2022 </div>
+            <div class="hover-text"> Printed and online magazine to
+              help parents and their children, who struggle with mental health issues. </div>
+          </div>
+        </a>
+
+        <img src="Images/GAM/COVER.jpg" alt="galleria d'arte moderna new identity" class="project-overview-img three">
+        <a href="projects/gam.html" class="overlay p3">
+          <div class="project-gallery-text">
+            <div class="hover-title"> Galleria d'Arte Moderna </br> 2022 </div>
+            <div class="hover-text"> New identity request for the modern
+              art museum in Milano. </div>
+          </div>
+        </a>
+
+        <img src="Images/M/COVER.jpg" alt="redesign of the e-commerce for massimo alba"
+          class="project-overview-img two">
+        <a href="projects/m.html" class="overlay p2">
+          <div class="project-gallery-text">
+            <div class="hover-title"> Massimo Alba </br> 2022 </div>
+            <div class="hover-text"> A redesign proposal for the e-commerce of massimoalba.com. </div>
+          </div>
+        </a>
+
+        <img src="Images/MC/COVER.jpg" alt="identity design for Marie Cuisine" class="project-overview-img one">
+        <a href="projects/mc.html" class="overlay p1">
+          <div class="project-gallery-text">
+            <div class="hover-title"> Marie Cuisine </br> 2021 </div>
+            <div class="hover-text"> Visual identity design for an online </div>
+          </div>
+        </a>
+
+        <img src="Images/LWL/COVER.jpg" alt="identity redesign for LWL magazine" class="project-overview-img one">
+        <a href="projects/lwl.html" class="overlay p1">
+          <div class="project-gallery-text">
+            <div class="hover-title"> Little </br> 2021 </div>
+            <div class="hover-text"> Visual identity design for an online </div>
+          </div>
+        </a>
       </div>
-      </a>
+    </main>
 
-      <img src="images/MM/COVER.jpg" alt="online magazien - mind matter" class="project-overview-img five">
-      <a href="projects/mm.html" class="overlay p4">
-        <div class="project-gallery-text">
-          <div class="hover-title"> Mind Matter </div>> 2022
-        </div>
-        <div class="hover-text"> Printed and online magazine to
-          help parents and their children, who struggle with mental health issues. </div>
-      </a>
+    <footer>
+      <ul>
+        <li> <a href="https://www.linkedin.com/in/pauline-peeters-bb622120a/" target="_blank"> <img
+              src="icons/LinkdIn.png" alt="LindIn" width="30px" height="30px"></a></li>
+        <li> <a href="https://www.behance.net/ppportfolio" target="_blank"> <img src="icons/Behance.png" alt="Behance"
+          width="30px" height="30px"> </a></li>
+        <li> <a href="https://www.pinterest.com/paulinepeeterss/_saved/" target="_blank"> <img src="icons/Pinterest.png"
+              alt="Pinterest" width="30px" height="30px"></a></li>
+      </ul>
+    </footer>
 
-      <img src="images/GAM/COVER.jpg" alt="galleria d'arte moderna new identity" class="project-overview-img three">
-      <a href="projects/gam.html" class="overlay p3">
-        <div class="project-gallery-text">
-          <div class="hover-title"> Galleria d'Arte Moderna </div> 2022
-        </div>
-        <div class="hover-text"> New identity request for the modern
-          art museum in Milano. </div>
-  </div>
-  </a>
+    <script>
+      var gridTimeline = new gsap.timeline();
+      gridTimeline.from(".four", { duration: .1, delay: .01, scale: 0, opacity: 0, ease: "ease.out" }), 0;
+      gridTimeline.from(".three", { duration: .3, delay: .01, scale: 0, opacity: 0, ease: "ease.out" }), 0.1;
+      gridTimeline.from(".two", { duration: .3, delay: .01, scale: 0, opacity: 0, ease: "ease.out" }), 0.2;
+      gridTimeline.from(".one", { duration: .3, delay: .01, scale: 0, opacity: 0, ease: "ease.out" }), 0.3;
+    </script>
 
-  <img src="images/M/COVER.jpg" alt="redesign of the e-commerce for massimo alba" class="project-overview-img two">
-  <a href="projects/m.html" class="overlay p2">
-    <div class="project-gallery-text">
-      <div class="hover-title"> Massimo Alba </div> 2022
-    </div>
-    <div class="hover-text"> A redesign proposal for the e-commerce of massimoalba.com. </div>
-    </div>
-  </a>
-
-  <img src="images/MC/COVER.jpg" alt="identity design for Marie Cuisine" class="project-overview-img one">
-  <a href="projects/mc.html" class="overlay p1">
-    <div class="project-gallery-text">
-      <div class="hover-title"> Marie Cuisine </div> 2021
-    </div>
-    <div class="hover-text"> Visual identity design for an online </div>
-    </div>
-  </a>
-
-  <img src="images/LWL/COVER.jpg" alt="identity redesign for LWL magazine" class="project-overview-img one">
-  <a href="projects/lwl.html" class="overlay p0">
-    <div class="project-gallery-text">
-      <div class="hover-title"> Little White Lies </div> 2020
-    </div>
-    <div class="hover-text"> New identity for the movie magazine,
-      Little White Lies </div>
-    </div>
-  </a>
-  </div>
-  </main>
-
-  <footer>
-    <ul>
-      <li> <a href="https://www.linkedin.com/in/pauline-peeters-bb622120a/" target="_blank"> <img
-            src="icons/LinkdIn.png" alt="LindIn" height="30px"></a></li>
-      <li> <a href="https://www.behance.net/ppportfolio" target="_blank"> <img src="icons/Behance.png" alt="Behance"
-            height="30px"> </a></li>
-      <li> <a href="https://www.pinterest.com/paulinepeeterss/_saved/" target="_blank"> <img src="icons/Pinterest.png"
-            alt="Pinterest" height="30px"></a></li>
-    </ul>
-  </footer>
-
-  <script>
-    var gridTimeline = new gsap.timeline();
-    gridTimeline.from(".four", { duration: .1, delay: .01, scale: 0, opacity: 0, ease: "ease.out" }), 0;
-    gridTimeline.from(".three", { duration: .3, delay: .01, scale: 0, opacity: 0, ease: "ease.out" }), 0.1;
-    gridTimeline.from(".two", { duration: .3, delay: .01, scale: 0, opacity: 0, ease: "ease.out" }), 0.2;
-    gridTimeline.from(".one", { duration: .3, delay: .01, scale: 0, opacity: 0, ease: "ease.out" }), 0.3;
-  </script>
-
-  </div>
-</body>
+  </body>
+</div>
