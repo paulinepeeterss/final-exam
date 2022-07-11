@@ -24,7 +24,7 @@
     <main>
       <div class="project-overview">
 
-        <img src="images/PP/poster.jpg" alt="personal identity" class="project-overview-img four">
+        <img src="images/PP/poster.jpg" alt="personal identity" class="project-overview-img five">
         <a href="projects/pp.html" class="overlay p5">
           <div class="project-gallery-text">
             <div class="hover-title"> Personal Identity </div> 2022
@@ -33,7 +33,7 @@
           </div>
         </a>
 
-        <img src="images/MM/COVER.jpg" alt="online magazine - mind matter" class="project-overview-img five">
+        <img src="images/MM/COVER.jpg" alt="online magazine - mind matter" class="project-overview-img four">
         <a href="projects/mm.html" class="overlay p4">
           <div class="project-gallery-text">
             <div class="hover-title"> Mind Matter </div> 2022
@@ -68,7 +68,7 @@
           </div>
         </a>
 
-        <img src="images/LWL/COVER.jpg" alt="identity redesign for LWL magazine" class="project-overview-img one">
+        <img src="images/LWL/COVER.jpg" alt="identity redesign for LWL magazine" class="project-overview-img zero">
         <a href="projects/lwl.html" class="overlay p0">
           <div class="project-gallery-text">
             <div class="hover-title"> Little White Lies</div> 2021
@@ -91,10 +91,12 @@
 
     <script>
       var gridTimeline = new gsap.timeline();
-      gridTimeline.from(".four", { duration: .1, delay: .01, scale: 0, opacity: 0, ease: "ease.out" }), 0;
-      gridTimeline.from(".three", { duration: .3, delay: .01, scale: 0, opacity: 0, ease: "ease.out" }), 0.1;
-      gridTimeline.from(".two", { duration: .3, delay: .01, scale: 0, opacity: 0, ease: "ease.out" }), 0.2;
-      gridTimeline.from(".one", { duration: .3, delay: .01, scale: 0, opacity: 0, ease: "ease.out" }), 0.3;
+      gridTimeline.from(".five", { duration: .3, delay: .01, scale: 0, opacity: 0, ease: "ease.out" }), 0;
+      gridTimeline.from(".four", { duration: .1, delay: .01, scale: 0, opacity: 0, ease: "ease.out" }), 0.1;
+      gridTimeline.from(".three", { duration: .3, delay: .01, scale: 0, opacity: 0, ease: "ease.out" }), 0.2;
+      gridTimeline.from(".two", { duration: .3, delay: .01, scale: 0, opacity: 0, ease: "ease.out" }), 0.3;
+      gridTimeline.from(".one", { duration: .3, delay: .01, scale: 0, opacity: 0, ease: "ease.out" }), 0.4;
+      gridTimeline.from(".zero", { duration: .3, delay: .01, scale: 0, opacity: 0, ease: "ease.out" }), 0.5;
     </script>
 
   </body>
